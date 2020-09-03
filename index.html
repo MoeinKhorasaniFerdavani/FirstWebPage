@@ -3,24 +3,7 @@
   <head>
     <title>moein page</title>
     <meta charset="utf-8" />
-    <style>
-        div.TxtContent
-        {
-        background-color:cornsilk;
-        color:black;text-align:right;
-        box-shadow:5px 5px 5px  black
-        }
-        h3.MagorName
-        {
-            text-align:center;
-            color:crimson
-        }
-        .MainHeaderStyle
-        {
-            text-align:center;
-            color:crimson
-        }
-    </style>
+    <link rel="stylesheet" href="Styles.css"/>
   </head>
   <body>
       <h1 class="MainHeaderStyle"> <a href="About.html">درباره من</a></h1><br />
@@ -32,12 +15,12 @@
                                                                                          <h3 style="text-align:right;color:chartreuse">علاقه مندی های من</h3>
 
                                                                                          <ul style="text-align:left;background-color:aquamarine;color:black">
-                                                                                             <li style="">ریاضی</li>
-                                                                                             <li>برنامه نویسی</li>
+                                                                                             <li class="FavoritName">ریاضی</li>
+                                                                                             <li class="FavoritName">برنامه نویسی</li>
                                                                                              <ul>
-                                                                                                 <li>c++</li>
-                                                                                                 <li>Qt</li>
-                                                                                                 <li>html</li>
+                                                                                                 <li class="FavoritName">c++</li>
+                                                                                                 <li class="FavoritName">Qt</li>
+                                                                                                 <li class="FavoritName">html</li>
                                                                                              </ul>
 
                                                                                          </ul>
@@ -47,17 +30,17 @@
        <h2 style="text-align:center"><span style="color:crimson">لینک ها</span></h2><br />
        <ol style="text-align:left;color:blue">
            <!-- external sites link-->
-          <li><a href="https://www.iut.ac.ir" target="_blank">دانشگاه صنعتی اصفهان</a></li>
-          <li><a href="https://www.lms.iut.ac.ir" target="_blank" title="سامانه lms">سامانه یاد گیری دروس</a></li>
-          <li><a href="Page2.html">صفحه 2</a></li>
+          <li><a href="https://www.iut.ac.ir" target="_blank" class="FavoritLink">دانشگاه صنعتی اصفهان</a></li>
+          <li><a href="https://www.lms.iut.ac.ir" target="_blank" title="سامانه lms" class="FavoritLink">سامانه یاد گیری دروس</a></li>
+          <li><a href="Page2.html" class="FavoritLink">صفحه 2</a></li>
           <li>لینک های اموزشی</li>
            <!--internal link-->
           <ul>
-              <li><a href="#mathematic">ریاضیات</a></li>
-              <li><a href="#programming">برنامه نویسی</a></li>
+              <li><a href="#mathematic" class="FavoritLink">ریاضیات</a></li>
+              <li><a href="#programming" class="FavoritLink">برنامه نویسی</a></li>
               <ul>
-                  <li><a href="#c++">C++</a></li>
-                  <li><a href="Qt.html">Qt</a></li>
+                  <li><a href="#c++" class="FavoritLink">C++</a></li>
+                  <li><a href="Qt.html" class="FavoritLink">Qt</a></li>
               </ul>
           </ul>
        </ol>
