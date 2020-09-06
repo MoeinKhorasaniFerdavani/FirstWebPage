@@ -69,6 +69,10 @@
             color:black;
             float:left;
         }
+        .MyLink
+        {
+
+        }
 
         @media (min-width:700px)
         {
@@ -128,6 +132,13 @@
                 width:49%;
                 margin:1px;
             }
+            .MyLink
+            {
+                 color:white;
+                 background-color:white;
+                 width:99%;
+                 word-wrap:break-word;
+            }
 
         }
         @media (max-width:699px)
@@ -176,33 +187,52 @@
                  width:99%;
                 margin:.5px;
              }
+             .MainLink
+             {
+                 
+                 width:99%;
+                 word-wrap:break-word;
+             }
         }
 
     </style>
 </head>
 <body>
     <div class="MainBox">
+        
         <div class="LoginBox">
-            <span class="le">نام کاربری </span>
-            <span class="le">پسورد </span>
-            <a href="" class="btn_sign_up"> ورود</a>
-            <a href="" class="btn_add">عضویت</a>
+            <section id="Login">
+                <span class="le">نام کاربری </span>
+                <span class="le">پسورد </span>
+                <a href="" class="btn_sign_up"> ورود</a>
+                <a href="" class="btn_add">عضویت</a>
+                <a href="#HelpYou" class="MyLink">چه گونه عضو شوم؟</a><br />
+                <a href="#AboutUs" class="MyLink">درباره ما؟</a>
+            </section>
         </div>
-        <div class="OtherBox1">
-            <h4>درباره ما</h4>
-            <p>
-                درباره ما چه می دانید ؟؟؟
-                سلام سلام سلام سلام سلام سلام سلام سلامسلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام
-            </p>
-        </div>
-
+       
+        <section id="AboutUs">
+            <div class="OtherBox1">
+                <h4>درباره ما</h4>
+                <p>
+                    درباره ما چه می دانید ؟؟؟
+                    سلام سلام سلام سلام سلام سلام سلام سلامسلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام
+                    <br /><a href="#Login" class="MyLink">بازگشت به فرم ورود</a>
+                </p>
+            </div>
+        </section>
+        
         <div class="OtherBox2">
-            <h4> کمک به شما </h4>
-            <p>
-                چه گونه عضو شویم؟؟
-                سلام سلام سلام سلام سلام سلام سلام سلامسلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام
-            </p>
+            <section id="HelpYou">
+                <h4> کمک به شما </h4>
+                <p>
+                    چه گونه عضو شویم؟؟
+                    سلام سلام سلام سلام سلام سلام سلام سلامسلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام
+                    <br /><a href="#Login" class="MyLink">بازگشت به فرم ورود</a>
+                </p>
+            </section>
         </div>
+       
     </div>
 
 </body>
