@@ -1,0 +1,49 @@
+﻿@media (min-width:992px) and (max-width:1199px) 
+{
+    .MainBox {
+        margin: 0px;
+        float: left;
+    }
+
+    .OtherBox1 {
+        float: left;
+        border-right: 3px solid crimson;
+        border-bottom: 3px solid crimson;
+        border-left: 3px solid crimson;
+        margin: 5px 0px 5px 0px;
+    }
+
+    .OtherBox2 {
+        float: right;
+        border-right: 3px solid crimson;
+        border-bottom: 3px solid crimson;
+        border-left: 3px solid crimson;
+        margin: 5px 0px 5px 0px;
+    }
+
+    .LoginBox
+    {
+        min-height: 200px;
+    }
+
+    .le
+    {
+        border: 2px solid white;
+    }
+
+    .btn_add {
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        min-width: 50%;
+    }
+
+    .btn_sign_up {
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        min-width: 50%;
+    }
+
+
+}

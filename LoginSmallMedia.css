@@ -5,19 +5,21 @@
     }
 
     .OtherBox1 {
-        min-height: 500px;
+        
         float: left;
         border-right: 3px solid crimson;
         border-bottom: 3px solid crimson;
         border-left: 3px solid crimson;
+        margin:5px 0px 5px 0px;
     }
 
     .OtherBox2 {
-        min-height: 500px;
+        
         float: left;
         border-right: 3px solid crimson;
         border-bottom: 3px solid crimson;
         border-left: 3px solid crimson;
+        margin: 5px 0px 5px 0px;
     }
 
     .LoginBox {
@@ -48,7 +50,6 @@
     }
 
     .MainLink {
-        width: 99%;
         word-wrap: break-word;
     }
 }
