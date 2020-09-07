@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
+    <link rel="stylesheet" href="BootStrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="LoginLargMedia.css" />
+    <link rel="stylesheet" href="LoginSmallMedia.css" />
     <style>
         *
         {
@@ -12,16 +15,17 @@
         }
         body
         {
-
-            margin:15px;
+            margin:3px;
+            padding:20px;
         }
+        
         .OtherBox1
         {
             background-color:white;
             color:black;
             text-align:center;
             word-wrap:break-word;
-            padding:1%;
+            padding:0px;
         }
         .OtherBox2
         {
@@ -29,7 +33,7 @@
             color:black;
             text-align:center;
             word-wrap:break-word;
-            padding:1%;
+            padding:0px;
         }
         .LoginBox
         {
@@ -39,19 +43,20 @@
             word-wrap:break-word;
             text-align:right;
             font-size:130%;
-            padding:1%;
+            padding:0 1% 1% 1%;
         }
         h4
             {
                background-color:crimson;
                color:white;
                text-align:center;
-               width:99%;
+               margin:0px;
+               min-height:10%;
                   
             }
         .le
         {
-            background-color:white;
+            background-color:rgb(220,220,220);
             color:black;
             float:left;
         }
@@ -73,167 +78,57 @@
         {
 
         }
-
-        @media (min-width:700px)
+        /*Larg media*/
+       
+        /*mediom media*/
+        @media (min-width:992px) and (max-width:1199px)
         {
-            .MainBox
-            {
-                margin:100px 40px 100px 40px;
-                position:relative;
-            }
-            .OtherBox1
-            {
-                top:0px;
-                left:0px;
-                position:absolute;
-                width:25%;
-                min-height:500px;
-                box-shadow:7px 7px 7px black;
-                margin:5px;
-                
-            }
-            .OtherBox2
-            {
-                top:0px;
-                right:0px;
-                position:absolute;
-                width:25%;
-                min-height:500px;
-                box-shadow:7px 7px 7px black;
-                margin:5px;
-                
-            }
-            
-            .LoginBox
-            {
-                width:40%;
-                box-shadow:3px 3px 3px black;
-                position:absolute;
-                top:20%;
-                left:30%;
-                
-              
-            }
-            .le
-            {
-                border:1px solid black;
-                width:99%;
-                margin:1px;
-            }
-            .btn_add
-            
-            {
-                width:49%;
-                
-                margin:1px;
-            }
-            .btn_sign_up
-            {
-                width:49%;
-                margin:1px;
-            }
-            .MyLink
-            {
-                 color:white;
-                 background-color:white;
-                 width:99%;
-                 word-wrap:break-word;
-            }
 
         }
-        @media (max-width:699px)
-        {
-             .MainBox
-            {
-                margin:0px;
-                float:left;
-            }
-             .OtherBox1
-             {
-                width:99%;
-                min-height:500px;
-                box-shadow:7px 7px 7px black;
-                margin:5px;
-                float:left;
-             }
-             .OtherBox2
-             {
-                 width:99%;
-                min-height:500px;
-                box-shadow:7px 7px 7px black;
-                margin:5px;
-                float:left;
-             }
-             .LoginBox
-             {
-                 width:99%;
-                 box-shadow:3px 3px 3px black;
-                 margin:2px 2px 10px 2px;
-                 min-height:200px;
-             }
-             .le
-             {
-                border:.5px solid black;
-                width:99%;
-                margin:.5px;
-             }
-             .btn_add
-             {
-                width:99%;
-                margin:.5px;
-             }
-             .btn_sign_up
-             {
-                 width:99%;
-                margin:.5px;
-             }
-             .MainLink
-             {
-                 
-                 width:99%;
-                 word-wrap:break-word;
-             }
-        }
-
+        /*else*/
+        
     </style>
 </head>
 <body>
-    <div class="MainBox">
-        
-        <div class="LoginBox">
-            <section id="Login">
-                <span class="le">نام کاربری </span>
-                <span class="le">پسورد </span>
-                <a href="" class="btn_sign_up"> ورود</a>
-                <a href="" class="btn_add">عضویت</a>
-                <a href="#HelpYou" class="MyLink">چه گونه عضو شوم؟</a><br />
-                <a href="#AboutUs" class="MyLink">درباره ما؟</a>
-            </section>
-        </div>
-       
-        <section id="AboutUs">
-            <div class="OtherBox1">
-                <h4>درباره ما</h4>
-                <p>
-                    درباره ما چه می دانید ؟؟؟
-                    سلام سلام سلام سلام سلام سلام سلام سلامسلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام
-                    <br /><a href="#Login" class="MyLink">بازگشت به فرم ورود</a>
-                </p>
-            </div>
-        </section>
-        
-        <div class="OtherBox2">
-            <section id="HelpYou">
-                <h4> کمک به شما </h4>
-                <p>
-                    چه گونه عضو شویم؟؟
-                    سلام سلام سلام سلام سلام سلام سلام سلامسلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام
-                    <br /><a href="#Login" class="MyLink">بازگشت به فرم ورود</a>
-                </p>
-            </section>
-        </div>
-       
-    </div>
+    <div class="content">
+        <div class="MainBox row">
 
+
+
+            <div class="LoginBox col-lg-6 col-xs-12">
+                <section id="Login">
+                    <span class="le col-xs-12">نام کاربری </span>
+                    <span class="le col-xs-12">پسورد </span>
+                    <a href="" class="btn_sign_up"> ورود</a>
+                    <a href="" class="btn_add">عضویت</a>
+                    <a href="#HelpYou" class="MyLink">چه گونه عضو شوم؟</a><br />
+                    <a href="#AboutUs" class="MyLink">درباره ما؟</a>
+                </section>
+            </div>
+
+            <section id="AboutUs">
+                <div class="OtherBox1 col-lg-3 col-xs-12">
+                    <h4 class="col-xs-12">درباره ما</h4>
+                    <p class="col-xs-12" style="text-align:right;">
+                        درباره ما چه می دانید ؟؟؟
+                        سلام سلام سلام سلام سلام سلام سلام سلامسلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام
+                        <br /><a href="#Login" class="MyLink">بازگشت به فرم ورود</a>
+                    </p>
+                </div>
+            </section>
+
+            <div class="OtherBox2 col-lg-3 col-xs-12">
+                <section id="HelpYou">
+                    <h4 class="col-xs-12"> کمک به شما </h4>
+                    <p class="col-xs-12" style="text-align:right;">
+                        چه گونه عضو شویم؟؟
+                        سلام سلام سلام سلام سلام سلام سلام سلامسلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام سلام
+                        <br /><a href="#Login" class="MyLink">بازگشت به فرم ورود</a>
+                    </p>
+                </section>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
