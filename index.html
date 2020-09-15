@@ -1,57 +1,49 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>moein page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Styles.css"/>
+    <link rel="stylesheet" href="Styles.css" />
     <link rel="stylesheet" href="BootStrap/css/bootstrap.min.css" />
-      <style>
-          .MyMenu
-          {
-              background-color:rgb(178, 0, 255);
-              color:white;
-              font-size:200%;
-              margin-top:1%;
-              margin-bottom:2%;
-              overflow:hidden;
-          }
-          a.MyMenuItem
-          {
-              color:white;
-              text-align:center;
-              padding:2px;
-              overflow:hidden;
-              position:relative;
-              float:right;
-          }
-          a.MyMenuItem:hover
-          {
-              color:rgb(178, 0, 255);
-              background-color:rgb(220, 180, 229);
-              text-decoration:none;
-             
-          }
-         
-          @media (max-width:991px)
-          {
-              .MyMenu
-              {
-                  display:none;
-              }
-          }
-      </style>
-     
-  </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .MyMenu {
+            background-color: rgb(178, 0, 255);
+            color: white;
+            font-size: 200%;
+            margin-top: 1%;
+            margin-bottom: 2%;
+            overflow: hidden;
+        }
+
+        a.MyMenuItem {
+            color: white;
+            text-align: center;
+            padding: 2px;
+            overflow: hidden;
+            position: relative;
+            float: right;
+        }
+
+            a.MyMenuItem:hover {
+                color: rgb(178, 0, 255);
+                background-color: rgb(220, 180, 229);
+                text-decoration: none;
+            }
+    </style>
+
+</head>
   <body>
       <div class="content">
-          <div class="row MyMenu" id="LargMediaMenuBar">
+          <nav class="row MyMenu  navbar" id="LargMediaMenuBar">
 
-              <a class="MyMenuItem col-lg-2 col-md-4" href="LoginPage.html">ورود به سامانه</a>
-              <a class="MyMenuItem col-lg-2 col-md-4" href="About.html">درباره من</a>
-              <a class="MyMenuItem col-lg-2 col-md-4" href="DowloadPage.html">دانلود نرم افزار</a>
+              <a class="MyMenuItem col-xs-4 col-lg-2 col-md-4 col-sm-4" href="LoginPage.html">ورود به سامانه</a>
+              <a class="MyMenuItem hidden-xs col-lg-2 col-md-4 col-sm-4 " href="About.html">درباره من</a>
+              <a class="MyMenuItem col-xs-4 col-lg-2 col-md-4 col-sm-4 pull-left" href="DowloadPage.html">دانلود نرم افزار</a>
 
-          </div>
+          </nav>
       </div>
       <div style="background-color:royalblue;color:black;text-align:right;font-size:14px;box-shadow:5px 5px 5px  black">
           من معین خراسانی فردوانی هستم متولد
