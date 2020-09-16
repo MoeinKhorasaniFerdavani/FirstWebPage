@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Styles.css" />
     <link rel="stylesheet" href="BootStrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         .MyMenu {
             background-color: rgb(178, 0, 255);
@@ -15,10 +17,10 @@
             font-size: 200%;
             margin-top: 1%;
             margin-bottom: 2%;
-            overflow: hidden;
+            overflow:visible;
         }
 
-        a.MyMenuItem {
+        .MyMenuItem {
             color: white;
             text-align: center;
             padding: 2px;
@@ -26,25 +28,86 @@
             position: relative;
             float: right;
         }
+        .btnMenu
+        {
+            
+            background-color:inherit;
+            color:white;
+
+            
+        }
+        .btnMenu:hover
+        {
+            color: rgb(178, 0, 255);
+            background-color: rgb(220, 180, 229);
+        }
+         .btnMenu:focus
+        {
+            color: rgb(178, 0, 255);
+            background-color: rgb(220, 180, 229)  !important;
+        }
+          .btnMenu:active
+        {
+            color: rgb(178, 0, 255);
+            background-color: rgb(220, 180, 229)  !important;
+        }
 
             a.MyMenuItem:hover {
                 color: rgb(178, 0, 255);
                 background-color: rgb(220, 180, 229);
                 text-decoration: none;
             }
+            .dropdown-item
+            {
+                z-index:1;
+            }
+            img.MyMenuImg
+            {
+                width:30%;
+                height:30%;
+            }
+            .MenuList
+            {
+                background-color: rgb(178, 0, 255);
+                color:white;
+                font-size:70%;
+            }
+            hr
+            {
+                border-top: 3px solid #bbb;
+            }
+
     </style>
 
 </head>
   <body>
+      <!--content -->
       <div class="content">
           <nav class="row MyMenu  navbar" id="LargMediaMenuBar">
 
-              <a class="MyMenuItem col-xs-6 col-lg-2 col-md-4 col-sm-4" href="LoginPage.html">ورود به سامانه</a>
+              <div class="dropdown pull-right visible-xs" style="background-color:inherit;">
+                  <button class="btn btn-secondary btn-lg dropdown-toggle btnMenu  pull-right" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <img src="iconimg/menuicon.png" class="MyMenuImg"/>
+                     
+
+                  </button>
+                  <div class="dropdown-menu MenuList col-xs-2" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item MyMenuItem" href="LoginPage.html">ورود به سامانه</a>
+                      <a class="dropdown-item MyMenuItem" href="DowloadPage.html">دانلود نرم افزار</a>
+                      <a class="dropdown-item MyMenuItem" href="tel:+989130259970"><img src="IconImg/CallIcon.png" class="MyMenuImg" />تماس با ما</a>
+                      <a class="dropdown-item MyMenuItem" href="About.html">درباره من</a>
+                      
+                  </div>
+              </div>
+
+              <a class="MyMenuItem hidden-xs col-lg-2 col-md-4 col-sm-4" href="LoginPage.html">ورود به سامانه</a>
               <a class="MyMenuItem hidden-xs col-lg-2 col-md-4 col-sm-4 " href="About.html">درباره من</a>
-              <a class="MyMenuItem hidden-xs col-lg-2 col-md-4 col-sm-4 pull-left" href="DowloadPage.html">دانلود نرم افزار</a>
+              <a class="MyMenuItem hidden-xs col-lg-2 col-md-4 col-sm-4 pull-md-left" href="DowloadPage.html">دانلود نرم افزار</a>
 
           </nav>
       </div>
+
+
       <div style="background-color:royalblue;color:black;text-align:right;font-size:14px;box-shadow:5px 5px 5px  black">
           من معین خراسانی فردوانی هستم متولد
           <b>27 مرداد 1380</b>
